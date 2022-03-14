@@ -1,0 +1,12 @@
+namespace: m4eba
+name: haproxy
+version: 0.1.0
+readme: README.md
+authors:
+  - m4eba
+description: An ansible collection to install haproxy and keepalived
+license_file: 'LICENSE'
+tags: ['haproxy','keepalived']
+dependencies: { }
+repository: http://github.com/m4eba/ansible-haproxy
+issues: http://github.com/m4eba/ansible-haproxy/issues
