@@ -4,13 +4,13 @@
       - haproxy
     state: present
 - name: global config template
-  template:
+  ansible.builtin.template:
     dest: /etc/haproxy/global.cfg
     src: 'global.cfg.j2'
     mode: 0644
   notify: restart haproxy
 - name: change config file
-  blockinfile:
+  ansible.builtin.blockinfile:
     path: /etc/default/haproxy
     block: CONFIG="/etc/haproxy/"
   notify: restart haproxy
